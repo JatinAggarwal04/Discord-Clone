@@ -1,13 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MLSC Flagship Event Website</title>
-    <link rel="stylesheet" href="styles_home.css">
+  <title>MLSC Flagship Event</title>
+  <link rel="stylesheet" type="text/css" href="styles_home.css">
 </head>
 <body>
-    
+  <div class="container">
+    <div class="sidebar">
+      <h2>Channels</h2>
+      <ul class="channel-list">
+        <li class="channel active">General</li>
+        <li class="channel">Random</li>
+        <li class="channel">Announcements</li>
+      </ul>
+    </div>
+    <div class="main-content">
+      <div class="chat" id="chatContainer">
+        
+      </div>
+      <div class="input-container">
+        <input type="text" id="messageInput" placeholder="Type your message...">
+        <button id="sendButton">Send</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
