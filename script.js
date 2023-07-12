@@ -1,11 +1,13 @@
+var usernameInput = document.getElementById('usernameInput');
 var messageInput = document.getElementById('messageInput');
 var sendButton = document.getElementById('sendButton');
 var chatContainer = document.getElementById('chatContainer');
 
 sendButton.addEventListener('click', function() {
+  var username = usernameInput.value;
   var message = messageInput.value;
-  if (message.trim() !== '') {
-    addMessage('You', getCurrentTime(), message);
+  if (username.trim() !== '' && message.trim() !== '') {
+    addMessage(username, getCurrentTime(), message);
     messageInput.value = '';
   }
 });
@@ -40,6 +42,3 @@ function getCurrentTime() {
   var minutes = now.getMinutes();
   return hours + ':' + (minutes < 10 ? '0' : '') + minutes;
 }
-
-addMessage('John Doe', '12:34 PM', 'Hello, everyone!');
-addMessage('Jane Smith', '12:35 PM', 'Hey John! How are you doing?');
