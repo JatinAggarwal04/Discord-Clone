@@ -10,13 +10,10 @@ registrationForm.addEventListener('submit', function(event) {
   var password = passwordInput.value;
   var confirmPassword = confirmPasswordInput.value;
 
-  // Implement your server-side registration logic here
-  // Check if email is unique, validate password, and store user in the database
-
-  // Example registration success message
+  
   alert('Registration Successful!');
   registrationForm.reset();
 
-  // Redirect to the login page
+  
   window.location.href = 'index.html';
 });
