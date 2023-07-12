@@ -5,8 +5,8 @@ document.addEventListener('DOMContentLoaded', function() {
   var userProfileSection = document.getElementById('userProfileSection');
 
   logoutButton.addEventListener('click', function() {
-    // Perform logout action here, such as clearing session/local storage, redirecting to login page, etc.
-    window.location.href = 'index.html'; // Redirect to the login page
+   
+    window.location.href = 'index.html';
   });
 
   profileButton.addEventListener('click', function() {
