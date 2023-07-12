@@ -1,0 +1,84 @@
+*{
+  margin: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #36393f;
+  color: #fff;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  margin-top: 0;
+}
+
+.channel-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.channel {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.channel.active {
+  background-color: #7289da;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.chat {
+  height: 400px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  overflow-y: scroll;
+}
+
+.message {
+  margin-bottom: 10px;
+}
+
+.message .username {
+  font-weight: bold;
+}
+
+.message .timestamp {
+  font-size: 12px;
+  color: #888;
+}
+
+.input-container {
+  display: flex;
+  margin-top: 20px;
+}
+
+.input-container input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+}
+
+.input-container button {
+  padding: 10px;
+  background-color: #7289da;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
