@@ -5,16 +5,16 @@ document.addEventListener('DOMContentLoaded', function() {
   var userProfileSection = document.getElementById('userProfileSection');
 
   logoutButton.addEventListener('click', function() {
-   
-    window.location.href = 'index.html';
+    
+    window.location.href = 'index.html'; 
   });
 
   profileButton.addEventListener('click', function() {
-    userProfileSection.classList.add('visible');
+    userProfileSection.style.display = 'block';
   });
 
   closeButton.addEventListener('click', function() {
-    userProfileSection.classList.remove('visible');
+    userProfileSection.style.display = 'none';
   });
 
   var sendButton = document.getElementById('sendButton');
